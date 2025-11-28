@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Master Setup - Generate Key from Eye Blink</h2>
+    
+    <div class="camera-section">
+        <div class="video-container">
+            <video id="webcam" width="640" height="480" autoplay muted playsinline></video>
+            <canvas id="blinkCanvas" width="640" height="480" style="display:none;"></canvas>
+        </div>
+        
+        <div class="controls">
+            <button onclick="startBlinkCapture()" class="btn-primary">Start Blink Detection</button>
+            <button onclick="stopBlinkCapture()" class="btn-secondary">Stop Capture</button>
+        </div>
+        
+        <div id="blinkData" class="blink-data">
+            <p>Click "Start Blink Detection" to begin</p>
+        </div>
+        
+        <div id="keyStatus" class="key-status"></div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/blink_capture.js') }}"></script>
+{% endblock %}

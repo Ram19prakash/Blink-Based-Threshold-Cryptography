@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Encrypt Document</h2>
+    <form id="encryptForm">
+        <input type="file" id="document" required>
+        <input type="number" id="n_users" placeholder="Number of users" required>
+        <input type="number" id="threshold" placeholder="Access threshold" required>
+        <button type="submit">Encrypt & Generate Shares</button>
+    </form>
+</div>
+{% endblock %}
