@@ -1,0 +1,10 @@
+flask==3.0.0
+opencv-python==4.9.0.80
+numpy==1.26.0
+cryptography==41.0.7
+secretsharing==0.2.7
+scipy==1.11.4
+flask-socketio==5.3.6
+python-engineio==4.7.1
+python-socketio==5.8.0
+mediapipe==0.10.9
